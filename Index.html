@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="bg-blue-950 min-h-screen">
+      <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 fixed top-0 w-full z-50">
+        <div class="max-w-full flex flex-wrap items-center justify-between mx-auto p-4">
+          <div class="flex items-center space-x-3 rtl:space-x-reverse">
+            <span class="self-center px-16 text-2xl font-semibold whitespace-nowrap dark:text-white hover:text-sky-400 transition-colors duration-300">Noel Dev</span>
+          </div>
+          <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+            <ul class="flex flex-col mr-28 font-medium p-4 md:p-0 mt-4 border rounded-lg bg-gray-950 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+              <li class="mt-5 md:mt-0">
+                <a href="#home" class="text-white hover:text-sky-400 transition-colors duration-300">Home</a>
+              </li>
+              <li class="mt-5 md:mt-0">
+                <a href="#about" class="text-white hover:text-sky-400 transition-colors duration-300">About</a>
+              </li>
+              <li class="mt-5 md:mt-0">
+                <a href="#service" class="text-white hover:text-sky-400 transition-colors duration-300">Service</a>
+              </li>
+              <li class="mt-5 md:mt-0">
+                <a href="#contact" class="text-white hover:text-sky-400 transition-colors duration-300">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Home -->
+      <div id="home" class="px-20 py-20 top-10">
+        <div class="grid grid-cols-1 md:grid-cols-2" data-aos="fade-up">
+          <div class="order-2 md:order-1 mt-8 md:mt-0">
+            <h1 class="text-white text-xl font-bold animate-pulse">Hello I am</h1>
+            <h2 class="text-sky-400 text-2xl font-bold hover:text-yellow-300 transition-colors duration-300">Noel Imanishimwe</h2>
+            <p class="text-white text-3xl font-bold">
+              And I'm a <span class="text-yellow-300" id="auto_type"></span>
+            </p>
+
+            <div class="mt-3">
+              <p class="text-white text-sm hover:text-sky-400 transition-colors duration-300">
+                Crafting captivating user experiences through front-end web
+                development, utilizing HTML, CSS, and JavaScript, with
+                proficiency in frameworks like React.
+              </p>
+            </div>
+
+            <!-- Social media to follow -->
+            <div class="space-x-5 mt-5">
+              <a href="#" class="text-2xl border rounded-full px-2 p-1 text-sky-400 border-sky-400 hover:shadow-lg hover:shadow-yellow-300 hover:text-yellow-300 hover:border-yellow-300 transition-all duration-300 inline-block">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+              <a href="#" class="text-2xl border rounded-full px-2 p-1 text-sky-400 border-sky-400 hover:shadow-lg hover:shadow-yellow-300 hover:text-yellow-300 hover:border-yellow-300 transition-all duration-300 inline-block">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+              <a href="#" class="text-2xl border rounded-full px-2 p-1 text-sky-400 border-sky-400 hover:shadow-lg hover:shadow-yellow-300 hover:text-yellow-300 hover:border-yellow-300 transition-all duration-300 inline-block">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+              <a href="#" class="text-2xl border rounded-full px-2 p-1 text-sky-400 border-sky-400 hover:shadow-lg hover:shadow-yellow-300 hover:text-yellow-300 hover:border-yellow-300 transition-all duration-300 inline-block">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </div>
+
+            <div class="mt-4 space-x-8">
+              <button class="border border-sky-400 px-4 rounded-xl text-white py-2 hover:border-sky-400 hover:bg-sky-400 hover:text-white hover:shadow-lg hover:shadow-sky-400 transition-all duration-300">
+                Download CV <ion-icon name="cloud-download-outline"></ion-icon>
+              </button>
+              <button class="border border-sky-400 px-4 rounded-xl mt-4 md:mt-0 text-white py-2 hover:border-sky-400 hover:bg-sky-400 hover:text-white hover:shadow-lg hover:shadow-sky-400 transition-all duration-300">
+                Hire Me <ion-icon name="document-text-outline"></ion-icon>
+              </button>
+            </div>
+          </div>
+
+          <div class="order-1 md:order-2 text-center items-center" data-aos="fade-left">
+            <img src="images/img.png" alt="" class="w-2/3 ms-0 lg:ms-32 hover:scale-105 transition-transform duration-300"/>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About -->
+    <div id="about" class="bg-blue-950">
+      <div class="grid grid-cols-1 md:grid-cols-2 px-20 py-16">
+        <div class="mt-10 md:mt-0" data-aos="fade-right">
+          <img src="images/img.png" alt="" class="border-2 border-sky-400 py-16 rounded-full px-6 w-2/3 hover:shadow-md hover:shadow-sky-400 transition-all duration-300"/>
+        </div>
+
+        <div class="mt-5 md:mt-10" data-aos="fade-left">
+          <h1 class="text-3xl font-bold text-white">
+            About <span class="text-sky-400">Me</span>
+          </h1>
+          <p class="text-2xl font-bold text-white hover:text-sky-400 transition-colors duration-300">Front End Developer</p>
+          <p class="mt-3 text-white hover:text-sky-400 transition-colors duration-300">
+            As a front-end web developer, I specialize in HTML, CSS, and
+            JavaScript, leveraging frameworks like React and Angular to create
+            dynamic and responsive user interfaces. With a keen eye for design
+            and expertise in optimizing functionality, I deliver engaging and
+            seamless web experiences tailored to client needs.
+          </p>
+          <div class="text-end mt-8">
+            <button class="px-5 border border-sky-400 rounded-md text-white py-1 bg-sky-400 hover:shadow-md hover:shadow-yellow-300 hover:bg-yellow-300 hover:border-yellow-300 transition-all duration-300">
+              Read more
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service -->
+    <div id="service" class="bg-blue-950">
+      <div class="p-16">
+        <div class="text-center p-3 mb-5" data-aos="fade-up">
+          <h1 class="text-white text-3xl font-bold">Our Services</h1>
+          <h1 class="text-yellow-300 mt-2 text-2xl font-semibold">We Offer</h1>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <!-- Service cards with animations -->
+
+
+          <div class="bg-gray-950 rounded-xl p-5 hover:border-sky-400 border-2 hover:p-8 hover:shadow-md hover:shadow-sky-400 border-gray-950 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+           
+          <div class="text-center">
+            <h1 class="text-4xl font-bold text-sky-400">
+              <ion-icon name="code-slash-outline"></ion-icon>
+            </h1>
+            <h1 class="text-xl font-bold text-white">Web Development</h1>
+          </div>
+          <div class="mt-2">
+            <p class="text-white">
+              We excel in web development, creating bespoke websites with
+              cutting-edge technologies, intuitive designs, and robust
+              functionality. Elevate your online presence and engage your
+              audience with our tailored web solutions.
+            </p>
+          </div>
+          <div class="text-center mt-5">
+            <button
+              class="bg-sky-400 py-1 text-xs shadow-md shadow-sky-300 text-gray-950 px-5 rounded-3xl"
+            >
+              Read more
+            </button>
+          </div>
+        </div>
+
+          <div class="bg-gray-950 rounded-xl p-5 hover:border-sky-400 border-2 hover:p-8 hover:shadow-md hover:shadow-sky-400 border-gray-950 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+           
+          <div class="text-center">
+            <h1 class="text-4xl font-bold text-sky-400">
+              <ion-icon name="create-outline"></ion-icon>
+            </h1>
+            <h1 class="text-xl font-bold text-white">
+              Web Development Training
+            </h1>
+          </div>
+          <div class="mt-2">
+            <p class="text-white">
+              Elevate your skills with our web development training. Learn
+              coding languages, frameworks, and design principles to build
+              dynamic and responsive websites effectively.
+            </p>
+          </div>
+          <div class="text-center mt-5">
+            <button
+              class="bg-sky-400 py-1 text-xs shadow-md shadow-sky-300 text-gray-950 px-5 rounded-3xl"
+            >
+              Read more
+            </button>
+          </div>
+          </div>
+          
+          <div class="bg-gray-950 rounded-xl p-5 hover:border-sky-400 border-2 hover:p-8 hover:shadow-md hover:shadow-sky-400 border-gray-950 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+           
+            <div class="text-center">
+              <h1 class="text-4xl font-bold text-sky-400">
+                <ion-icon name="create-outline"></ion-icon>
+              </h1>
+              <h1 class="text-xl font-bold text-white">
+                Web Development Training
+              </h1>
+            </div>
+            <div class="mt-2">
+              <p class="text-white">
+                Elevate your skills with our web development training. Learn
+                coding languages, frameworks, and design principles to build
+                dynamic and responsive websites effectively.
+              </p>
+            </div>
+            <div class="text-center mt-5">
+              <button
+                class="bg-sky-400 py-1 text-xs shadow-md shadow-sky-300 text-gray-950 px-5 rounded-3xl"
+              >
+                Read more
+              </button>
+           
+          </div>
+          </div>
+
+
+             
+          <div class="bg-gray-950 rounded-xl p-5 hover:border-sky-400 border-2 hover:p-8 hover:shadow-md hover:shadow-sky-400 border-gray-950 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+           
+            <div class="text-center">
+              <h1 class="text-4xl font-bold text-sky-400">
+                <ion-icon name="cloud-outline"></ion-icon>
+              </h1>
+              <h1 class="text-xl font-bold text-white">
+                Web Hosting Services
+              </h1>
+            </div>
+            <div class="mt-2">
+              <p class="text-white">
+                Get reliable and secure web hosting solutions for your website. We offer fast servers, 
+                24/7 support, SSL certificates, and automated backups to keep your website running smoothly.
+              </p>
+            </div>
+            <div class="text-center mt-5">
+              <button
+                class="bg-sky-400 py-1 text-xs shadow-md shadow-sky-300 text-gray-950 px-5 rounded-3xl"
+              >
+                Read more
+              </button>
+           
+          </div>
+          </div>          
+          <!-- Add similar data-aos attributes to other service cards -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects -->
+     <div id="projects" class="py-20 bg-blue-950">
+           <div class="text-center mb-10" data-aos="fade-up">
+             <h1 class="text-3xl font-bold text-white">My <span class="text-sky-400">Projects</span></h1>
+             <p class="text-white mt-2">Check out some of my recent work</p>
+           </div>
+     
+           <div class="container mx-auto px-4">
+             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+               
+               <!-- Project 1 -->
+               <div class="group relative overflow-hidden rounded-xl" data-aos="zoom-in" data-aos-delay="100">
+                 <div class="relative h-72 bg-gray-800 rounded-xl transform transition-all duration-500 group-hover:scale-105">
+                   <img src="images/ec.jpg" alt="Project 1" class="w-full h-full object-cover opacity-75 group-hover:opacity-50 transition-opacity duration-500">
+                   <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent"></div>
+                   <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-6 transition-transform duration-500 group-hover:translate-y-0">
+                     <h3 class="text-xl font-bold text-white mb-2">E-Commerce Platform</h3>
+                     <p class="text-gray-300 text-sm mb-4">A full-stack e-commerce solution with React and Node.js</p>
+                     <button class="bg-sky-400 py-2 px-4 rounded-full text-sm text-gray-900 hover:bg-sky-500 transition-colors duration-300">View Project</button>
+                   </div>
+                 </div>
+               </div>
+     
+               <!-- Project 2 -->
+               <div class="group relative overflow-hidden rounded-xl" data-aos="zoom-in" data-aos-delay="200">
+                 <div class="relative h-72 bg-gray-800 rounded-xl transform transition-all duration-500 group-hover:scale-105">
+                   <img src="images/sc.jpg" alt="Project 2" class="w-full h-full object-cover opacity-75 group-hover:opacity-50 transition-opacity duration-500">
+                   <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent"></div>
+                   <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-6 transition-transform duration-500 group-hover:translate-y-0">
+                     <h3 class="text-xl font-bold text-white mb-2">School Dashboard</h3>
+                     <p class="text-gray-300 text-sm mb-4">Analytics dashboard with real-time data visualization</p>
+                     <button class="bg-sky-400 py-2 px-4 rounded-full text-sm text-gray-900 hover:bg-sky-500 transition-colors duration-300"> <a href="1noel.github.io/school/"> View Project </a></button>
+                   </div>
+                 </div>
+               </div>
+     
+               <!-- Project 3 -->
+               <div class="group relative overflow-hidden rounded-xl" data-aos="zoom-in" data-aos-delay="300">
+                 <div class="relative h-72 bg-gray-800 rounded-xl transform transition-all duration-500 group-hover:scale-105">
+                   <img src="images/gb.jpg" alt="Project 3" class="w-full h-full object-cover opacity-75 group-hover:opacity-50 transition-opacity duration-500">
+                   <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent"></div>
+                   <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-6 transition-transform duration-500 group-hover:translate-y-0">
+                     <h3 class="text-xl font-bold text-white mb-2">Global Green</h3>
+                     <p class="text-gray-300 text-sm mb-4">Environmental sustainability platform promoting eco-friendly initiatives</p>
+                     <button class="bg-sky-400 py-2 px-4 rounded-full text-sm text-gray-900 hover:bg-sky-500 transition-colors duration-300"> <a href="https://1noel.github.io/GlobalGreen/"> View Project </a></button>
+                   </div>
+                 </div>
+               </div>
+     
+               <!-- Project 4 -->
+               <div class="group relative overflow-hidden rounded-xl" data-aos="zoom-in" data-aos-delay="400">
+                 <div class="relative h-72 bg-gray-800 rounded-xl transform transition-all duration-500 group-hover:scale-105">
+                   <img src="images/img.png" alt="Project 4" class="w-full h-full object-cover opacity-75 group-hover:opacity-50 transition-opacity duration-500">
+                   <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent"></div>
+                   <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-6 transition-transform duration-500 group-hover:translate-y-0">
+                     <h3 class="text-xl font-bold text-white mb-2">Portfolio</h3>
+                     <p class="text-gray-300 text-sm mb-4">Interactive portfolio showcasing my projects and skills</p>
+                     <button class="bg-sky-400 py-2 px-4 rounded-full text-sm text-gray-900 hover:bg-sky-500 transition-colors duration-300">View Project</button>
+                   </div>
+                 </div>
+               </div>
+     
+               <!-- Project 5 -->
+               <div class="group relative overflow-hidden rounded-xl" data-aos="zoom-in" data-aos-delay="500">
+                 <div class="relative h-72 bg-gray-800 rounded-xl transform transition-all duration-500 group-hover:scale-105">
+                   <img src="images/sign.jpg" alt="Project 5" class="w-full h-full object-cover opacity-75 group-hover:opacity-50 transition-opacity duration-500">
+                   <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent"></div>
+                   <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-6 transition-transform duration-500 group-hover:translate-y-0">
+                     <h3 class="text-xl font-bold text-white mb-2">Momo Bond Contract</h3>
+                     <p class="text-gray-300 text-sm mb-4">Digital contract signing platform for Momo bonds</p>
+                     <button class="bg-sky-400 py-2 px-4 rounded-full text-sm text-gray-900 hover:bg-sky-500 transition-colors duration-300">View Project</button>
+                   </div>
+                 </div>
+               </div>
+     
+               <!-- Project 6 -->
+               <div class="group relative overflow-hidden rounded-xl" data-aos="zoom-in" data-aos-delay="600">
+                 <div class="relative h-72 bg-gray-800 rounded-xl transform transition-all duration-500 group-hover:scale-105">
+                   <img src="images/exb.jpg" alt="Project 6" class="w-full h-full object-cover opacity-75 group-hover:opacity-50 transition-opacity duration-500">
+                   <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent"></div>
+                   <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-6 transition-transform duration-500 group-hover:translate-y-0">
+                     <h3 class="text-xl font-bold text-white mb-2">Exam Brochure Platform</h3>
+                     <p class="text-gray-300 text-sm mb-4">Digital platform for exam brochures and guides</p>
+                     <button class="bg-sky-400 py-2 px-4 rounded-full text-sm text-gray-900 hover:bg-sky-500 transition-colors duration-300"><a href="https://1noel.github.io/Exambrochure"></a> View Project</button>
+                   </div>
+                 </div>
+               </div>
+     
+             </div>
+           </div>
+         </div>
+     
+
+    <!-- Contact -->
+    <div id="contact" class="bg-blue-950 py-20">
+      <div class="text-center mb-10" data-aos="fade-up">
+        <h1 class="text-3xl font-bold text-white">Contact <span class="text-sky-400">Me</span></h1>
+        <p class="text-white mt-2">Get in touch with me</p>
+      </div>
+
+        <form class="max-w-md mx-auto bg-gray-900/50 p-8 rounded-xl backdrop-blur-sm border-2 border-sky-400/20 shadow-xl" data-aos="fade-up">
+          <div class="relative z-0 w-full mb-5 group">
+            <input type="email" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-sky-400 dark:focus:border-sky-500 focus:outline-none focus:ring-0 focus:border-sky-600 peer" placeholder=" " required />
+            <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-sky-600 peer-focus:dark:text-sky-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
+          </div>
+          <div class="relative z-0 w-full mb-5 group">
+            <input type="password" name="floating_password" id="floating_password" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-sky-400 dark:focus:border-sky-500 focus:outline-none focus:ring-0 focus:border-sky-600 peer" placeholder=" " required />
+            <label for="floating_password" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-sky-600 peer-focus:dark:text-sky-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Password</label>
+          </div>
+          <div class="relative z-0 w-full mb-5 group">
+            <input type="password" name="repeat_password" id="floating_repeat_password" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-sky-400 dark:focus:border-sky-500 focus:outline-none focus:ring-0 focus:border-sky-600 peer" placeholder=" " required />
+            <label for="floating_repeat_password" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-sky-600 peer-focus:dark:text-sky-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Confirm password</label>
+          </div>
+          <div class="grid md:grid-cols-2 md:gap-6">
+            <div class="relative z-0 w-full mb-5 group">
+              <input type="text" name="floating_first_name" id="floating_first_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-sky-400 dark:focus:border-sky-500 focus:outline-none focus:ring-0 focus:border-sky-600 peer" placeholder=" " required />
+              <label for="floating_first_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-sky-600 peer-focus:dark:text-sky-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First name</label>
+            </div>
+            <div class="relative z-0 w-full mb-5 group">
+              <input type="text" name="floating_last_name" id="floating_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-sky-400 dark:focus:border-sky-500 focus:outline-none focus:ring-0 focus:border-sky-600 peer" placeholder=" " required />
+              <label for="floating_last_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-sky-600 peer-focus:dark:text-sky-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last name</label>
+            </div>
+          </div>
+          <div class="grid md:grid-cols-2 md:gap-6">
+            <div class="relative z-0 w-full mb-5 group">
+              <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="floating_phone" id="floating_phone" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-sky-400 dark:focus:border-sky-500 focus:outline-none focus:ring-0 focus:border-sky-600 peer" placeholder=" " required />
+              <label for="floating_phone" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-sky-600 peer-focus:dark:text-sky-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone number (123-456-7890)</label>
+            </div>
+            <div class="relative z-0 w-full mb-5 group">
+              <input type="text" name="floating_company" id="floating_company" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-sky-400 dark:focus:border-sky-500 focus:outline-none focus:ring-0 focus:border-sky-600 peer" placeholder=" " required />
+              <label for="floating_company" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-sky-600 peer-focus:dark:text-sky-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Company (Ex. Google)</label>
+            </div>
+          </div>
+          <button type="submit" class="text-white bg-sky-400 hover:bg-sky-500 focus:ring-4 focus:outline-none focus:ring-sky-300 font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center transition-all duration-300 hover:shadow-lg hover:shadow-sky-400/50">Submit</button>
+        </form>  
+      </div>
+
+      <!-- create footer -->
+       <!-- Footer -->
+       <footer class="bg-gray-900 text-white py-8">
+         <div class="container mx-auto px-4">
+           <div class="flex flex-col md:flex-row justify-between items-center">
+             <div class="mb-4 md:mb-0">
+               <h3 class="text-xl font-bold">Portfolio<span class="text-sky-400">.</span></h3>
+               <p class="text-gray-400 mt-2">Building digital experiences that matter.</p>
+             </div>
+             <div class="flex space-x-4">
+               <a href="#" class="hover:text-sky-400 transition-colors duration-300">
+                 <ion-icon name="logo-github" class="text-2xl"></ion-icon>
+               </a>
+               <a href="#" class="hover:text-sky-400 transition-colors duration-300">
+                 <ion-icon name="logo-linkedin" class="text-2xl"></ion-icon>
+               </a>
+               <a href="#" class="hover:text-sky-400 transition-colors duration-300">
+                 <ion-icon name="logo-twitter" class="text-2xl"></ion-icon>
+               </a>
+               <a href="#" class="hover:text-sky-400 transition-colors duration-300">
+                 <ion-icon name="logo-instagram" class="text-2xl"></ion-icon>
+               </a>
+             </div>
+           </div>
+           <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+             <p class="text-gray-400">© 2024 Portfolio. All rights reserved.</p>
+           </div>
+         </div>
+       </footer>
+       
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      let typed = new Typed("#auto_type", {
+        strings: ["Web Developer", "UI/UX Designer", "Frontend Developer"],
+        typeSpeed: 150,
+        backSpeed: 100,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
